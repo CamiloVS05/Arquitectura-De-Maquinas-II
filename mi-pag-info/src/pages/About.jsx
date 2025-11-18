@@ -34,7 +34,7 @@ export default function About() {
       edad: 21,
       carrera: "Ingeniería en Computacion",
       descripcion: "Estudiante de Ingenieria de Computacion, apasiondo por el desarrollo web especialmente en el Backend (Novio de la Ingeniera Madeling Cabrera rojas ,, Lafise Sistematica ,,)",
-      foto: ""
+      foto: "/ale.jpg"
     },
   ]
 

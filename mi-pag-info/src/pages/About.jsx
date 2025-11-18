@@ -9,7 +9,7 @@ export default function About() {
       nombre: "Alanis",
       edad: 21,
       carrera: "Ingeniería en Computación",
-      descripcion: "Soy Alanis del Carmen Tobias Sotelo, estudiante de cuarto año de Ingeniería en Computación en la Universidad Nacional de Ingeniería. Cuento con formación en administración de bases de datos, un nivel intermedio de inglés y un sólido interés en la Arquitectura de Máquinas Computadoras, área clave para comprender el funcionamiento interno del hardware y su relación con el desempeño de los sistemas computacionales.",
+      descripcion: "Soy Alanis del Carmen Tobias Sotelo, estudiante de cuarto año de Ingeniería en Computación en la Universidad Nacional de Ingeniería. Me interesa la Arquitectura de Máquinas porque es clave para comprender el funcionamiento interno del hardware y su relación con el desempeño de los sistemas computacionales.",
       foto: "/alanis.jpg"
     },
     {
@@ -30,18 +30,10 @@ export default function About() {
     },
     {
       id: 4,
-      nombre: "Sandra",
+      nombre: "Alejandro",
       edad: 21,
-      carrera: "Ingeniería en Sistemas",
-      descripcion: "Desarrolladora full stack con pasión por la innovación.",
-      foto: ""
-    },
-    {
-      id: 5,
-      nombre: "Carlos",
-      edad: 23,
-      carrera: "Ingeniería en Computación",
-      descripcion: "Investigador en inteligencia artificial y machine learning.",
+      carrera: "Ingeniería en Computacion",
+      descripcion: "Estudiante de Ingenieria de Computacion, apasiondo por el desarrollo web especialmente en el Backend (Novio de la Ingeniera Madeling Cabrera rojas ,, Lafise Sistematica ,,)",
       foto: ""
     },
   ]

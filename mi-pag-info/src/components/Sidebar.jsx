@@ -117,7 +117,7 @@ export default function Sidebar() {
             objectFit: "contain",
             }}
           />
-            <span>Arquitectura de Máquina II</span>
+            <span>Arquitectura de Máquinas II</span>
           </h1>
         </Link>
       </div>

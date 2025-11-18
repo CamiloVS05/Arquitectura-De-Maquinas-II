@@ -10,7 +10,7 @@ export default function About() {
       edad: 21,
       carrera: "Ingeniería en Computación",
       descripcion: "Soy Alanis del Carmen Tobias Sotelo, estudiante de cuarto año de Ingeniería en Computación en la Universidad Nacional de Ingeniería. Cuento con formación en administración de bases de datos, un nivel intermedio de inglés y un sólido interés en la Arquitectura de Máquinas Computadoras, área clave para comprender el funcionamiento interno del hardware y su relación con el desempeño de los sistemas computacionales.",
-      foto: "/public/alanis.jpg"
+      foto: "/alanis.jpg"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function About() {
       edad: 21,
       carrera: "Ingeniería en Computacion",
       descripcion: "jugador de legue of leyends y OTP SHEN",
-      foto: "/public/camilo.jpg"
+      foto: "/camilo.jpg"
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function About() {
       edad: 21,
       carrera: "Ingeniería en Computación",
       descripcion: "Me llamo Sergio Martínez, soy estudiante de ingeniería en computación. Esforzado y dispuesto por aprender en todo momento",
-      foto: "/public/sergio.jpg"
+      foto: "/sergio.jpg"
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ export default function About() {
       edad: 21,
       carrera: "Ingeniería en Sistemas",
       descripcion: "Desarrolladora full stack con pasión por la innovación.",
-      foto: "/profesional-mujer-sandra.jpg"
+      foto: ""
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ export default function About() {
       edad: 23,
       carrera: "Ingeniería en Computación",
       descripcion: "Investigador en inteligencia artificial y machine learning.",
-      foto: "/profesional-hombre-carlos.jpg"
+      foto: ""
     },
   ]
 

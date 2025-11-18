@@ -110,8 +110,7 @@ export default function Sidebar() {
             }}
           >
             <img
-            src="/Logo_UNI.PNG"
-            alt="Logo"
+            src="/Logo_UNI.png" alt="Logo"
             style={{
             width: "8rem",   // tamaño parecido a 1.5rem pero un poco más grande
             height: "1.8rem",

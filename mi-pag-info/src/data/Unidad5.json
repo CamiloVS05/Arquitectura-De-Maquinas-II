@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "titulo": "Unidad De Control",
+      "descripcion": "",
+      "detalles": [
+        {
+          "titulo": "La Función de Control",
+          "descripcion": "La función de control es la encargada de coordinar todas las operaciones que ocurren dentro del procesador durante la ejecución de instrucciones. Cada vez que la CPU ejecuta un programa, sigue un proceso repetitivo llamado ciclo de instrucción, que consiste en buscar (fetch), decodificar y ejecutar instrucciones. La Unidad de Control se encarga de dirigir este ciclo activando señales específicas en el momento exacto para que cada componente del CPU haga lo que le corresponde. En otras palabras, la Unidad de Control actúa como un (director de orquesta ) que coordina registros, buses, la memoria y la ALU para que todo ocurra sin conflictos."
+        },
+        {
+          "titulo": "¿Cómo Controla la Unidad de Control?",
+          "descripcion": "La Unidad de Control opera activando líneas de control que determinan qué dispositivo debe leer, escribir o ejecutar una operación. Por ejemplo, si es necesario cargar un dato en un registro, la UC activa las señales que habilitan la entrada del registro seleccionado. Cada señal controla un elemento del hardware: selección de registros, habilitación de buses, control de lectura/escritura en memoria, selección de operación de la ALU, entre otros. Todo esto sucede sincronizado con el reloj del procesador, garantizando que cada acción ocurra en el momento correcto."
+        },
+        {
+          "titulo": "El Ciclo de Instrucción",
+          "descripcion": "El ciclo de instrucción consta de dos fases principales: FETCH y EXECUTE. En la fase FETCH, se copia la dirección almacenada en el contador de programa (PC) al MAR, se activa Read, se incrementa el PC y se copia la instrucción desde el MDR al IR para decodificarla. En la fase EXECUTE, las acciones dependen del tipo de instrucción. Por ejemplo, puede requerirse traer operandos, ejecutar una operación en la ALU, almacenar resultados en registros o memoria y verificar si existen interrupciones pendientes. Todo este proceso se repite continuamente para cada instrucción del programa."
+        },
+        {
+          "titulo": "Operaciones Básicas de Control",
+          "descripcion": "La UC debe ser capaz de realizar una serie de operaciones esenciales: transferir contenido entre registros, leer o escribir en la memoria, ejecutar operaciones de la ALU, incrementar o modificar el PC, comprobar interrupciones, actualizar banderas y códigos de condición, limpiar bits específicos y decodificar instrucciones. Estas operaciones permiten que el CPU tenga un comportamiento ordenado y tenga la capacidad de responder tanto a las instrucciones del programa como a eventos externos."
+        },
+        {
+            "titulo": "Control de Registros",
+            "descripcion": "Cada registro del CPU debe poder conectarse o aislarse del bus, por lo que se utilizan buffers de tercer estado y líneas de control para habilitar su lectura o escritura. Para transferir datos entre registros, es necesario activar las señales de salida del registro fuente hacia el bus y luego activar las señales de entrada del registro destino. Esta lógica precisa evita conflictos en el bus y garantiza la integridad de los datos durante las operaciones internas."
+        },
+        {
+            "titulo": "Control de Memoria",
+            "descripcion": "La memoria está organizada en celdas accesibles mediante direcciones, y la UC controla cuándo se lee o se escribe en ella. Para leer desde memoria, la dirección se copia al MAR, se activa la señal READ y se espera la confirmación de que el ciclo ha terminado. El dato fluye desde la memoria, pasa por el bus y se almacena en el MDR. Para escribir, el proceso es similar, pero se activa la señal WRITE y el dato almacenado en el MDR se copia a la posición de memoria correspondiente."
+        },
+        {
+            "titulo": "Ejecución de Operaciones de la ALU",
+            "descripcion": "La ALU utiliza dos entradas (X y Y) para recibir operandos y una salida (Z) para devolver resultados. La UC se encarga de trasladar los operandos correctos desde los registros hacia estas entradas, seleccionar la operación adecuada en la ALU y almacenar el resultado en un registro o en memoria. En muchos diseños, el resultado de la ALU se guarda en un latch temporal antes de ser enviado a su destino final, garantizando estabilidad en el valor obtenido."
+        },
+        {
+            "titulo": "Incrementar el Contador de Programa (PC)",
+            "descripcion": "El PC debe incrementarse para apuntar a la siguiente instrucción. Si todas las instrucciones tienen el mismo tamaño, el incremento puede ser fijo (por ejemplo, +1 en arquitecturas de 16 bits direccionables por palabra). Este incremento puede realizarse mediante la ALU o mediante un sumador dedicado. La UC controla el momento exacto en el que el nuevo valor debe copiarse al PC."
+        },
+        {
+            "titulo": "Modificar el PC (Saltos)",
+            "descripcion": "Las instrucciones de salto permiten cambiar el flujo del programa. Los saltos pueden ser absolutos, donde el PC adquiere directamente una nueva dirección, o relativos, donde se suma un desplazamiento al valor actual del PC. También pueden ser condicionales o incondicionales. En saltos condicionales, se revisan banderas como Zero, Negative o Carry para decidir si el salto debe ejecutarse. La UC gestiona tanto el cálculo como la transferencia del nuevo valor al PC."
+        },
+        {
+            "titulo": "Interrupciones",
+            "descripcion": "El CPU puede recibir solicitudes externas mediante la señal INT. Estas interrupciones pueden corresponder a dispositivos de E/S o eventos críticos. Como pueden existir múltiples interrupciones simultáneas, se utiliza un controlador auxiliar encargado de priorizarlas y presentarlas una por una al CPU. La UC debe detectar estas solicitudes y, cuando corresponde, suspender temporalmente la ejecución normal para atender la rutina de servicio de interrupción (ISR)."
+        }
+        
+      ],
+      "powerpoint": {
+        "url": "https://docs.google.com/presentation/d/1naaOXABZZrkwYWfk0M1mQRjFWQB0bMUn/edit?slide=id.p1#slide=id.p1",
+        "titulo": "Unidad De Control"
+      },
+      
+      "video": {
+        "id": "G7otGJMv5QY",
+        "titulo": "Unidad de Control",
+        "descripcion": ""
+      }
+    }
+  ]

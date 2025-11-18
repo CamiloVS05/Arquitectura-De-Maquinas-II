@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "titulo": "Unidad Del Conjunto De Instrucciones",
+      "descripcion": "",
+      "detalles": [
+        {
+          "titulo": "¿Qué es un conjunto de instrucciones?",
+          "descripcion": "Imaginá que una computadora es como una persona siguiendo recetas de cocina 🍲.Cada “receta” es una instrucción. El conjunto de instrucciones es el libro completo de todas las recetas que la computadora puede entender.\n Ejemplos de “órdenes”:\n\n 1. mover datos\n 2. sumar\n 3. restar\n 4. comparar\n 5. saltar a otra parte del programa"
+        },
+        {
+          "titulo": " ¿Cómo está hecha una instrucción?",
+          "descripcion": "Para funcionar, cada instrucción tiene 3 partes internas (como una caja con 3 compartimentos):\n\n 1. Código de operación (Opcode), Qué se va a hacer Ej: sumar, mover, saltar.\n 2. Operandos, Son las cosas o valores sobre las que se va a operar. Ej: números, registros, direcciones de memoria.\n 3. Modo de direccionamiento, Indica dónde está el dato, En la instrucción, En un registro, En memoria, Apuntado por un registro"
+        },
+        {
+          "titulo": " Modos de direccionamiento\n",
+          "descripcion": " 1. Inmediato: El número viene directamente en la instrucción\n\n  2. Registro: El dato está dentro del procesador.\n\n  3. Absoluto (memoria): El dato está guardado en un lugar de la memoria.\n\n  4. Indirecto por registro: Un registro contiene la dirección donde está el dato.\n\n 5. Autoincremento / Autodecremento: Después (o antes) de usar el dato, se pasa al siguiente.\n\n 6. Indexado o con desplazamiento: Se suma una base + un número.\n\n 7. Relativo al PC (muy usado para saltos): La dirección depende de la posición actual."
+        },
+        {
+          "titulo": "¿Por qué se codifican las instrucciones?",
+          "descripcion": "El procesador no entiende palabras, solo bits (0 y 1). Entonces cada instrucción del libro se convierte en un código numérico. Tres técnicas principales:\n\n 1. Bloque fijo\n Todas las instrucciones ocupan la misma cantidad de bits, es facil pero a veces se desperdicia espacio\n\n 2. Bloque extendido\n Aprovecha los bits que no se usan en algunas instrucciones y ahorra espacio\n\n 3. Huffman\n Las instrucciones más usadas se codifican con menos bits, es super eficiente pero requiere estadistica reales de uso"
+        }
+      ],
+      "powerpoint": {
+        "url": "https://docs.google.com/presentation/d/1LeEP9zkrYS0h70VowZKe0BBAtcQlHAYN/edit?slide=id.p1#slide=id.p1",
+        "titulo": "Unidad Del Conjunto De Instrucciones"
+      },
+      
+      "video": {
+        "id": "-URf73z9tKY",
+        "titulo": "La CPU: UC, ALU y las fases de ejecución de una instrucción",
+        "descripcion": ""
+      }
+    }
+  ]

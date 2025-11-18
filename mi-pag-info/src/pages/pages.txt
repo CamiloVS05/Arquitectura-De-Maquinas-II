@@ -1,0 +1,2 @@
+pages/:
+Vistas que se muestran segun las rutas

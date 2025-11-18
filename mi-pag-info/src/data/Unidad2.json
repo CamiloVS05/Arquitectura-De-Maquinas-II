@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "titulo": "El procesador",
+    "descripcion": "Este tema aborda es el procesador, ¿Qué es lo que hace?, cuál es el trabajo del procesador?",
+    "detalles": [
+      {
+        "titulo": "¿Qué es un procesador?",
+        "descripcion": "El procesador o Unidad Central de Procesamiento (CPU, por sus siglas en inglés) es el cerebro de la computadora.Es el componente encargado de interpretar y ejecutar las instrucciones de los programas, controlando el funcionamiento de todo el sistema.En otras palabras, el procesador recibe datos, los procesa según un conjunto de instrucciones, y genera resultados"
+      },
+      {
+        "titulo": "¿Qué es lo que hace el procesador?",
+        "descripcion": "El trabajo principal del procesador es ejecutar instrucciones que le indican qué operaciones debe realizar.Estas instrucciones pueden ser de cálculo, control, transferencia de datos, o lógicas (comparaciones, decisiones, etc.).Ejemplo:Una instrucción como ADD AX, [10] indica al procesador que sume el valor almacenado en la posición de memoria 10 con el contenido del registro AX."
+      },
+      {
+        "titulo": "¿Cuál es el trabajo del procesador?",
+        "descripcion": "El trabajo del CPU se puede resumir en tres funciones principales:\n1. Leer instrucciones desde la memoria (programa almacenado).\n2. Interpretarlas y procesarlas, usando sus unidades internas (ALU, registros, unidad de control).\n3. Enviar los resultados al lugar correspondiente (otro registro o memoria).\n\nEn cada segundo, el procesador puede ejecutar millones o incluso miles de millones de estas instrucciones."
+      },
+      {
+        "titulo": "¿Cómo ejecuta las instrucciones?",
+        "descripcion": "El procesador sigue un ciclo muy preciso y repetitivo llamado Ciclo de Instrucción, que se divide en fases o subciclos. Este ciclo indica el procedimiento que el CPU realiza para cada instrucción del programa."
+      }
+    ],
+    "imagenes": [
+      {
+        "url": "https://i.imgur.com/8erHndp.pngg",
+        "alt": "Diagrama de Instrucción",
+        "descripcion": "Diagramma explicativo de las instrucciones del procesador"
+      }
+    ],
+    "video": {
+      "id": "G7MxRqDmXR8",
+      "titulo": "TOODO Sobre PROCESADORES (Que son, Funciones, Características y Tipos)",
+      "descripcion": "Video explicativo sobre los procesadores"
+    }
+  },
+  
+  {
+    "id": 2,
+    "titulo": "Ciclo de Instrucción",
+    "descripcion": "El ciclo de instrucción (también conocido como ciclo del CPU) es el proceso que sigue el procesador para ejecutar una instrucción almacenada en la memoria.",
+    "detalles": [
+      {
+        "titulo": "FASE FETCH",
+        "descripcion": "Durante esta fase, el procesador obtiene la instrucción que debe ejecutar desde la memoria principal. Es como “leer la siguiente línea de un programa” antes de interpretarla.\n 🧩 1. Cargar la siguiente instrucción\nObjetivo: Traer la instrucción desde la memoria principal (RAM) hasta el procesador.\n\n1. El Contador de Programa (PC) contiene la dirección de memoria de la instrucción que sigue.\n 2. Esa dirección se coloca en el bus de direcciones, que comunica el procesador con la memoria.\n 3. La memoria principal devuelve el contenido de esa dirección (la instrucción codificada en binario).\n4. Esa instrucción se almacena en el Registro de Instrucción (IR – Instruction Register).\n\n⚙️ 2. Incrementar el secuenciador\nObjetivo: Preparar el procesador para la siguiente instrucción.\n\n 1. Una vez que el CPU ya obtuvo la instrucción actual, el PC se incrementa (por ejemplo, +1 o +4 bytes, dependiendo del tamaño de la instrucción).\n 2. Esto hace que el procesador sepa cuál será la próxima instrucción que debe traer en el siguiente ciclo fetch.\n\n ⚙️3. Interpretar la instrucción\n Objetivo: La fase de decodificación es cuando la CPU interpreta el contenido del registro de instrucción (IR) para determinar:\n\n 1. Qué operación debe ejecutar (por ejemplo, suma, resta, salto, carga, comparación).\n2. Qué registros o direcciones de memoria están involucrados.\n 3. Qué tipo de datos va a manejar (inmediato, directo, indirecto, etc.)."
+      },
+      {
+        "titulo": "FASE EXECUTE",
+        "descripcion": "Durante esta fase, la CPU utiliza los datos y señales generadas en la fase Decode para realizar la tarea específica: puede ser una suma, resta, comparación, salto, lectura o escritura en memoria, etc.\n\n 1.🧮 Cargar los operandos\n Objetivo: Una vez que los operandos están disponibles, la CPU realiza la operación indicada por el opcode (el código de operación decodificado antes).\n\n 1. La CPU busca los operandos ya sea desde los registros internos o desde la memoria.\n 2. Si los operandos están en memoria, se cargan en registros de trabajo o en la ALU (Unidad Aritmético-Lógica).\n\n 2.⚡Ejecutar la operación\n Una vez que los operandos están disponibles, la CPU realiza la operación indicada por el opcode (el código de operación decodificado antes).\n\n 1. Sumar, restar, multiplicar o dividir.\n 2. Comparar valores.\n 3. Hacer operaciones lógicas (AND, OR, NOT, XOR).\n 4. Mover datos entre registros.\n 5. Realizar saltos o cambios en el flujo del programa.\n\n  3.💾 Guardar el resultado\n Después de la ejecución, el resultado debe almacenarse.\n\n 1. Si la operación fue aritmética, el resultado se guarda en un registro destino (por ejemplo, el acumulador).\n 2. Si la instrucción era una escritura, se guarda en una dirección de memoria.\n 3. En algunos casos, también se actualizan las banderas del procesador (flags)\n\n 4.🚨 Verificar si hay solicitudes de interrupción\n Una interrupción es una señal que pausa temporalmente la ejecución normal del programa para atender un evento urgente (por ejemplo, entrada de teclado, temporizador, o error de hardware).\n\n 1. Verifica si hay interrupciones pendientes.\n 2. Si existe una, suspende el programa actual, guarda el estado (valores de los registros, PC, etc.) y salta al manejador de interrupciones.\n 3. Si no hay interrupciones, continúa normalmente con el siguiente ciclo de instrucción (vuelve a Fetch)."
+      }
+    ],
+    "powerpoint": {
+      "url": "https://docs.google.com/presentation/d/1LuRaLGFeLrY1krtMqOr0ifWSDrxCVbg8/edit?slide=id.p1#slide=id.p1",
+      "titulo": "Presentación: Ciclo de Instrucción"
+    },
+    "video": {
+      "id": "_eUYql5ZcuU",
+      "titulo": "Ciclo de instruccion",
+      "descripcion": "CICLO DE INSTRUCCIÓN BÁSICO | BÚSQUEDA | DECODIFICACIÓN | EJECUCIÓN | ARQUITECTURA DE COMPUTADORAS"
+    }
+  }
+
+]
+

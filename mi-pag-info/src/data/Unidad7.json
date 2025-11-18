@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "titulo": "Sistema de Entrada/Salida",
+      "descripcion": "",
+      "detalles": [
+        {
+          "titulo": "Función del Sistema de Entrada/Salida",
+          "descripcion": "El sistema de Entrada/Salida (E/S) es el encargado de permitir que la computadora se comunique con el mundo exterior. Su objetivo principal es lograr la transferencia de datos entre el CPU, la memoria y los dispositivos externos. Este sistema se divide funcionalmente en dos partes: la unidad de entrada, que recibe datos y programas desde el exterior para que el CPU pueda procesarlos, y la unidad de salida, que entrega los resultados en formatos comprensibles para el usuario. Esta interacción entre el usuario y la máquina también se conoce como “interfaz Hombre–Máquina”."
+        },
+        {
+          "titulo": "Estructura de Interconexión",
+          "descripcion": "La computadora se organiza a través de una estructura que conecta al CPU, la memoria y el sistema de E/S mediante buses. Estos buses transportan datos, direcciones y señales de control. Normalmente se reconoce un bus principal llamado bus del sistema, y uno o varios buses de expansión utilizados específicamente para conectar los periféricos. Un controlador o puente de E/S actúa como intermediario entre el bus del sistema y los buses de entrada/salida, permitiendo que distintos dispositivos se comuniquen aun cuando utilicen tecnologías muy diferentes. "
+        },
+        {
+          "titulo": "Estandarización de Entrada/Salida",
+          "descripcion": "Como los dispositivos de E/S pueden ser electrónicos, electromecánicos u ópticos, es necesario estandarizar la forma en que se conectan y se comunican con la computadora. Los estándares de buses de expansión definen las características físicas, eléctricas y los protocolos que deben seguir los dispositivos para ser compatibles. Gracias a estos estándares, cualquier dispositivo que cumpla con las especificaciones puede conectarse sin necesidad de diseño especial para cada computadora."
+        },
+        {
+          "titulo": "Diseño del Bus",
+          "descripcion": "Un bus puede clasificarse por diferentes criterios: puede ser serial o paralelo, tener líneas dedicadas o multiplexadas, y utilizar distintos modos de arbitraje para decidir qué dispositivo puede usar el bus en determinado momento. La temporización también es importante: un bus puede ser síncrono, donde todas las actividades están coordinadas por un reloj central, o asíncrono, donde se utilizan señales de reconocimiento para coordinar las transferencias. Otros factores clave son el ancho del bus y los tipos de transacciones soportadas (lectura, escritura o por bloques)."
+        },
+        {
+            "titulo": "Ejemplos de Buses Estándar",
+            "descripcion": "Existen distintos buses ampliamente utilizados. El bus ISA fue uno de los primeros en computadoras personales, inicialmente de 8 bits y expandido luego a 16 bits. El bus PCI introdujo mayores capacidades y hoy ha evolucionado al PCI Express (PCIe), que es serial y ofrece múltiples canales de alta velocidad. Entre los buses externos más usados se encuentran USB, FireWire y eSATA, que permiten conectar dispositivos modernos como discos externos, tarjetas de red y equipos multimedia."
+        },
+        {
+            "titulo": "Módulo de Entrada/Salida",
+            "descripcion": "El módulo de E/S es el hardware que permite la comunicación entre un dispositivo y el bus del sistema. Este módulo se encarga de activar el acceso al dispositivo, gestionar la transferencia de datos, controlar el estado del periférico y proporcionar los mecanismos necesarios para leer o almacenar información. A menudo, el punto de acceso hacia un dispositivo se denomina “puerto”."
+        },
+        {
+            "titulo": "Direccionamiento de Dispositivos",
+            "descripcion": "El sistema debe identificar cada dispositivo mediante una dirección única. Esto puede realizarse de dos maneras: mediante mapeo integrado, donde memoria y E/S comparten el mismo espacio de direcciones, o mediante mapeo separado, donde existen espacios de direcciones independientes para memoria y para dispositivos. En el mapeo integrado se usan las mismas instrucciones para acceder a memoria y a E/S, mientras que en el mapeo separado se emplean instrucciones especiales como IN y OUT."
+        },
+        {
+            "titulo": "Comunicación con Dispositivos",
+            "descripcion": "Para realizar transferencias dirigidas por programa es necesario que el CPU conozca el estado del dispositivo. Esto se puede hacer mediante polling, que consiste en revisar continuamente el estado del periférico, aunque esto desperdicia mucho tiempo de CPU. Otras técnicas más eficientes incluyen el uso de interrupciones, que permiten que los dispositivos soliciten servicio solo cuando es necesario, y el uso de módulos auxiliares como DMA e IOPs para realizar transferencias sin intervención directa del procesador."
+        },
+        {
+            "titulo": "Interrupciones",
+            "descripcion": "Las interrupciones permiten suspender temporalmente la ejecución del programa para atender eventos importantes. Pueden ser síncronas, como las excepciones generadas por errores de ejecución (por ejemplo, división entre cero), o asíncronas, cuando son generadas por un dispositivo externo. El CPU verifica las interrupciones al final del ciclo de instrucción y, si corresponde, ejecuta la rutina de servicio asociada. Sin este mecanismo, la comunicación con dispositivos sería muy ineficiente."
+        },
+        {
+            "titulo": "Interrupciones de Hardware",
+            "descripcion": "Para manejar interrupciones provenientes de múltiples dispositivos, el sistema necesita un mecanismo de coordinación. El CPU cuenta con una señal de entrada para recibir solicitudes y una señal de salida para confirmar la atención. Debido a que existen múltiples dispositivos, se emplea un árbitro que define prioridades. Existen métodos como el árbitro paralelo, el serial o una combinación de ambos. También se pueden enmascarar interrupciones según su prioridad, aunque algunas, como el refresco de DRAM, no pueden ser bloqueadas."
+        }
+        
+      ],
+      "powerpoint": {
+        "url": "https://docs.google.com/presentation/d/1QY3f1iiVBnhw_lSDVGfvD4nZvYwPB4lR/edit?slide=id.p1#slide=id.p1",
+        "titulo": "Sistema De Entrada/Salida"
+      },
+      
+      "video": {
+        "id": "PSZ8_GnhAAg",
+        "titulo": "C18P02 - Estructura y Arquitectura de Dispositivos Entrada Salida - ISI485 - Sistemas Operativos",
+        "descripcion": ""
+      }
+    }
+  ]

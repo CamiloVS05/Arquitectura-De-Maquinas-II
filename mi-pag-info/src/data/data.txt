@@ -1,0 +1,2 @@
+data/:
+Contenido (puede ser de un json o lo podemos traer de una API)

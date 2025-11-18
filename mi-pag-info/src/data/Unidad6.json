@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "titulo": "Sistema de Memoria",
+      "descripcion": "",
+      "detalles": [
+        {
+          "titulo": "La Función de Almacenamiento",
+          "descripcion": "El sistema de memoria de una computadora tiene como función principal almacenar datos e instrucciones en diferentes niveles según la velocidad y capacidad requerida. Durante la ejecución de un programa, los datos pueden estar en registros del CPU, en la memoria principal o en la memoria secundaria. Este sistema asegura que la información esté disponible cuando el procesador la necesite, manteniendo un equilibrio entre rapidez, capacidad y costos."
+        },
+        {
+          "titulo": "Operaciones de Memoria: Lectura y Escritura",
+          "descripcion": "Todas las memorias soportan dos operaciones básicas: lectura y escritura. La lectura obtiene el contenido almacenado en una posición de memoria, mientras que la escritura coloca un nuevo dato en esa posición. El rendimiento general depende de la latencia (tiempo de acceso), el tiempo de ciclo, la velocidad de transferencia y otros factores físicos o electrónicos del dispositivo. "
+        },
+        {
+          "titulo": "Prestaciones y Métricas de la Memoria",
+          "descripcion": "Las memorias se evalúan mediante métricas como latencia (el tiempo que tarda en acceder a un dato), capacidad (cantidad total de información que puede almacenar) y velocidad de transferencia. Estas características determinan qué tan apta es una memoria para ser usada dentro del CPU, como memoria principal o como almacenamiento masivo."
+        },
+        {
+          "titulo": "Jerarquía de Memoria",
+          "descripcion": "El sistema de memoria está organizado en niveles para equilibrar velocidad y costo. En la parte superior se encuentran los registros, que son extremadamente rápidos pero pequeños. Luego sigue la memoria caché, diseñada para acelerar el acceso a datos frecuentes. Más abajo está la memoria principal (RAM) y finalmente la memoria secundaria, que ofrece gran capacidad pero es la más lenta. El objetivo de esta jerarquía es que el procesador pase menos tiempo esperando datos y más tiempo ejecutando operaciones"
+        },
+        {
+            "titulo": "Tipos de Memoria Según Su Nivel",
+            "descripcion": "La memoria puede categorizarse según dónde se encuentra y para qué se usa. La memoria interna del CPU contiene registros que almacenan datos temporales. La memoria intermedia o caché sirve como puente rápido entre el CPU y la memoria principal. La memoria principal almacena programas y datos en ejecución, y la memoria secundaria provee almacenamiento permanente y masivo para archivos y sistemas operativos."
+        },
+        {
+            "titulo": "Caracterización por Tecnología de Construcción",
+            "descripcion": "Las memorias se fabrican utilizando diferentes tecnologías. Las memorias semiconductoras pueden ser estáticas (SRAM), caracterizadas por su velocidad, o dinámicas (DRAM), que requieren refresco. También existen memorias magnéticas, ópticas, magneto-ópticas y tecnologías emergentes como memorias basadas en iones, hologramas o materiales avanzados. Cada tecnología tiene características específicas de costo, velocidad y durabilidad."
+        },
+        {
+            "titulo": "Memorias Según Retención del Dato",
+            "descripcion": "Dependiendo de si conservan o no los datos después de quitar la energía, las memorias se clasifican en volátiles, volátiles con respaldo de energía, y permanentes. Las memorias RAM son volátiles, mientras que las memorias ROM, Flash y similares mantienen la información incluso sin alimentación eléctrica."
+        },
+        {
+            "titulo": "Memorias Según Operación Soportada",
+            "descripcion": "Existen memorias de lectura y escritura (RW) y memorias de solo lectura (ROM). Dentro de las ROM hay variantes como PROM (programable una vez), EPROM (borrable con luz UV), EEPROM (borrable eléctricamente) y FLASH, que permite múltiples ciclos de lectura y escritura. Cada una se utiliza según su flexibilidad y resistencia."
+        },
+        {
+            "titulo": "Métodos de Acceso a la Memoria",
+            "descripcion": "El método de acceso determina cómo se obtiene un dato. En memoria de acceso aleatorio (RAM), cualquier posición se puede leer en el mismo tiempo. Las memorias secuenciales, como cintas magnéticas, requieren recorrer posiciones en orden. Las memorias de acceso directo, como discos duros, combinan un posicionamiento inicial con búsqueda secuencial. Cada método responde a necesidades distintas de costo, velocidad y capacidad."
+        },
+        {
+            "titulo": "Direccionamiento por Posición y Contenido",
+            "descripcion": "Algunas memorias son direccionadas por la posición física de sus celdas, como ocurre en la RAM tradicional. Otras, como las memorias asociativas, son direccionadas mediante parte del contenido almacenado. Estas últimas permiten búsquedas simultáneas en todas las celdas y se utilizan en aplicaciones donde se requiere identificar datos rápidamente, como en las cachés."
+        }
+        
+      ],
+      "powerpoint": {
+        "url": "https://docs.google.com/presentation/d/1-ikCNQhLxxC6igJZx1lP3Kiorf0kpMcM/edit?slide=id.p1#slide=id.p1",
+        "titulo": "Sistema de Memoria"
+      },
+      
+      "video": {
+        "id": "swOCvouHeAg",
+        "titulo": "Memorias ROM y RAM explicadas",
+        "descripcion": ""
+      }
+    }
+  ]

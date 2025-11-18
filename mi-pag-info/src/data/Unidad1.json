@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "titulo": "Arquitectura y Organización de Computadoras",
+    "descripcion": "Este tema aborda la diferencia entre la arquitectura y la organización de las computadoras.",
+    "detalles": [
+      {
+        "titulo": "Arquitectura",
+        "descripcion": "La arquitectura de computadoras es el conjunto de principios y métodos que definen la estructura y operación de un sistema de cómputo, abarcando desde el diseño del hardware hasta su interacción con el software. En esencia, es el plano lógico que describe cómo se organizan y comunican los componentes de una computadora para ejecutar instrucciones de manera eficiente."
+      },
+      {
+        "titulo": "Organización",
+        "descripcion": "Se refiere a la implementación de los componentes, su interconexión y la forma en que cooperan para ejecutar instrucciones."
+      },
+      {
+        "titulo": "Proceso constructivo",
+        "descripcion": "Incluye las etapas de planificación, diseño e implementación del sistema computacional."
+      },
+      {
+        "titulo": "Enfoques",
+        "descripcion": "Puede estudiarse desde un enfoque funcional (qué hace cada componente) o estructural (cómo están conectados)."
+      }
+    ],
+    "imagenes": [
+      {
+        "url": "https://i.imgur.com/ZgfAhwo.png",
+        "alt": "Diagrama de arquitectura",
+        "descripcion": "Diagramma explicativo de la arquitectura y organización de las computadoras"
+      },
+      {
+        "url": "https://i.imgur.com/ZhE4IWU.png",
+        "alt": "Enfoque funcional.",
+        "descripcion": "Enfoque funcional de la arquitectura y organización de las computadoras"
+      },
+      {
+        "url": "https://i.imgur.com/4DdqekD.png",
+        "alt": "Enfoque Estructural.",
+        "descripcion": "Enfoque Estructural de la arquitectura y organización de las computadoras"
+      }
+    ],
+    "video": {
+      "id": "O2O4hneA-tk",
+      "titulo": "Introducción a la Arquitectura de Computadoras",
+      "descripcion": "Video explicativo sobre los conceptos fundamentales de arquitectura y organización"
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Evolución de las Computadoras",
+    "descripcion": "La evolución de las computadoras describe cómo, a lo largo del tiempo, la tecnología, la velocidad y el tamaño de los dispositivos han cambiado radicalmente.",
+    "detalles": [
+      {
+        "titulo": "Primera generación (1940–1956)",
+        "descripcion": "Usaban tubos de vacío, ocupaban grandes espacios y generaban mucho calor. Ejemplo: ENIAC."
+      },
+      {
+        "titulo": "Segunda generación (1956–1963)",
+        "descripcion": "Se sustituyen los tubos de vacío por transistores, lo que redujo el tamaño y el consumo energético."
+      },
+      {
+        "titulo": "Tercera generación (1964–1971)",
+        "descripcion": "Introducción de los circuitos integrados, mayor velocidad y confiabilidad."
+      },
+      {
+        "titulo": "Cuarta generación (1971–1980)",
+        "descripcion": "Aparición del microprocesador; las computadoras personales comienzan a surgir."
+      },
+      {
+        "titulo": "Quinta generación (1980–presente)",
+        "descripcion": "Incorporación de la inteligencia artificial, redes globales y dispositivos móviles."
+      }
+    ],
+    "imagenes": [
+      {
+        "url": "https://i.imgur.com/Z8S2qJp.jpeg",
+        "alt": "Evolución de las computadoras",
+        "descripcion": "Las computadoras han evolucionado desde el ENIAC hasta el presente, pasando por varias generaciones."
+      }
+    ],
+    "video": {
+      "id": "yV4l7IpuQA4",
+      "titulo": "La EVOLUCION de las COMPUTADORAS",
+      "descripcion": "Video explicativo sobre la evolución de las computadoras"
+    }
+  },
+  {
+
+    "id": 3,
+    "titulo": "Máquina Secuencial de Programa Almacenado",
+    "descripcion": "Este tema explica uno de los fundamentos más importantes de la arquitectura moderna: la idea de que tanto los datos como los programas se almacenan en la misma memoria.",
+    "detalles": [
+      {
+        "titulo": "Concepto fundamental",
+        "descripcion": "Una máquina secuencial de programa almacenado es un modelo de computadora en la que las instrucciones del programa (el software) y los datos se guardan en la misma memoria. Esto significa que la computadora puede leer, interpretar y ejecutar instrucciones de manera secuencial (una tras otra), sin intervención humana directa, siguiendo un orden lógico y predefinido."
+      },
+      {
+        "titulo": "Programa almacenado",
+        "descripcion": "Definición de instrucciones simples con las que se pueda programar cualquier tarea de cálculo de la máquina  en forma de una secuencia de instrucciones y la posibilidad de cargar estos programas en la misma memoria que se cargan los datos."
+      },
+      {
+        "titulo": "Ejecución secuencial",
+        "descripcion": "La computadora ejecuta las instrucciones una por una, siguiendo su orden en la memoria, salvo que alguna instrucción ordene saltar a otra parte del programa (por ejemplo, una instrucción de salto o bucle)."
+      },
+      {
+        "titulo": "Control centralizado",
+        "descripcion": "Existe una unidad de control (parte de la CPU) que se encarga de leer las instrucciones, decodificarlas y ejecutarlas, coordinando todas las operaciones."
+      }
+    ],
+    "imagenes": [
+      {
+        "url": "https://i.imgur.com/ClScfoP.png",
+        "alt": "Máquina Secuencial de Programa Almacenado",
+        "descripcion": "Estructura de una máquina secuencial de programa almacenado"
+      }
+    ],
+    "video": {
+      "id": "DfKwURN-zFI",
+      "titulo": "Máquinas Secuenciales: Introducción a los Sistemas Síncronos y Asíncronos",
+      "descripcion": "Video explicativo sobre maquinas secuenciales y sistemas síncronos y asíncronos"
+    }
+  }
+  
+  
+]

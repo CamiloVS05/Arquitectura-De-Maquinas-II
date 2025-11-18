@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "titulo": "Unidad De Ejecucion",
+      "descripcion": "",
+      "detalles": [
+        {
+          "titulo": "¿Qué es La Unidad de Ejecución?",
+          "descripcion": "La Unidad de Ejecución es el conjunto de componentes del procesador encargados de realizar todas las operaciones aritméticas, lógicas y de control necesarias para ejecutar instrucciones. Es la parte del CPU donde realmente se procesan los datos. Después de que una instrucción ha sido buscada y decodificada, la Unidad de Ejecución se encarga de completarla realizando las acciones necesarias. Esto incluye cálculos matemáticos, comparaciones, desplazamientos de bits y manejo de datos dentro de los registros internos del procesador."
+        },
+        {
+          "titulo": "Representación de Datos?",
+          "descripcion": "La computadora trabaja exclusivamente con bits, por lo que toda la información —números, caracteres, direcciones y símbolos— debe representarse como secuencias de ceros y unos. El tamaño de palabra del procesador (por ejemplo, 16, 32 o 64 bits) determina cuántos bits puede manipular simultáneamente y tiene una gran influencia en la capacidad de procesamiento y precisión numérica del sistema."
+        },
+        {
+          "titulo": "Números Enteros Sin Signo",
+          "descripcion": "Los números enteros sin signo representan únicamente valores positivos. Se utilizan comúnmente en operaciones donde no se requiere identificar valores negativos, como dirección de memoria o conteo de objetos. En esta representación, todos los bits aportan al valor numérico, lo que permite alcanzar rangos mayores de representación en comparación con los enteros con signo."
+        },
+        {
+          "titulo": "Representación de Números Enteros con Signo",
+          "descripcion": "Los números enteros con signo pueden representar valores positivos y negativos. Como los bits no pueden expresar directamente el signo, el procesador utiliza distintas técnicas para codificarlo. Las más importantes son:\n\n a) Signo-Magnitud\n En este método, el bit más significativo indica el signo (0 para positivo, 1 para negativo), mientras que los demás bits representan el valor. Aunque es fácil de comprender, presenta desventajas como la existencia de dos ceros (+0 y –0).\n\n b) Complemento a 1\nConsiste en invertir todos los bits del número positivo para obtener su versión negativa. Reduce ciertos problemas del método anterior, pero aún mantiene la duplicidad del cero.\n\n c) Complemento a 2\nEs el método más usado en los procesadores modernos. Para obtener el negativo de un número, se invierten todos los bits y se suma 1. Este formato simplifica las operaciones aritméticas y evita la existencia de dos ceros, además de permitir un diseño de hardware más eficiente.\n\n d). Exceso-M (Bias)\nEn esta representación se suma una constante (el exceso) al número real para obtener su equivalente almacenado. Es muy utilizado en exponentes de números en punto flotante debido a su facilidad para realizar comparaciones numéricas."
+        },
+        {
+            "titulo": "Otros Tipos de Representaciones",
+            "descripcion": "Además de los números enteros, las computadoras manejan otras formas de datos, como:\n\n a) BCD (Binary Coded Decimal)\n Codifica cada dígito decimal mediante 4 bits. Es útil cuando se requiere trabajar directamente con valores decimales, especialmente en sistemas financieros.\n\n b) Código Gray\nSu característica principal es que entre un número y el siguiente solo cambia un bit. Se utiliza en sensores rotatorios y aplicaciones donde es importante evitar errores en transiciones rápidas.\n\n c) Texto\nSe representa mediante códigos como ASCII o Unicode, donde cada letra o símbolo se almacena como una combinación de bits."
+        },
+        {
+            "titulo": "Números en Punto Flotante",
+            "descripcion": "Los números con decimales o muy grandes/pequeños se representan mediante el modelo de punto flotante. El estándar más utilizado es IEEE 754, que define formatos como 32 bits (simple precisión) y 64 bits (doble precisión). Estos números se dividen en tres partes: el bit de signo, el exponente (almacenado en exceso-M) y la mantisa o parte fraccionaria. Esta técnica es fundamental en aplicaciones científicas, gráficas, ingeniería y cálculos complejos."
+        },
+        {
+            "titulo": "Unidad Aritmética-Lógica (ALU)",
+            "descripcion": "La ALU es el circuito principal de cálculo dentro del procesador. Realiza operaciones aritméticas como suma y resta, así como operaciones lógicas como AND, OR, XOR y NOT. También se encarga de comparaciones entre valores y desplazamientos de bits. Existen varios tipos de sumadores dentro de la ALU; el más simple es el sumador con acarreo en serie, pero en procesadores modernos se utiliza el Carry Lookahead (CLA), un diseño que acelera la suma anticipando el acarreo, permitiendo un procesamiento más rápido."
+        },
+        {
+            "titulo": "Unidad Lógica",
+            "descripcion": "Esta unidad realiza operaciones como AND, OR, NOT, XOR y manipulación de bits. Es esencial para la toma de decisiones dentro del procesador, ya que permite realizar comparaciones, evaluar condiciones y transformar datos según las necesidades de las instrucciones."
+        },
+        {
+            "titulo": "Registros de Propósito General",
+            "descripcion": "Los registros son pequeñas memorias internas extremadamente rápidas utilizadas para almacenar datos temporales, resultados de operaciones y valores de control. Su velocidad es mucho mayor que la memoria RAM, lo que permite que el procesador trabaje eficientemente sin depender constantemente de accesos externos. Internamente, los registros están construidos con flip-flops, multiplexores, lógica de control y, en algunos casos, circuitos de desplazamiento que permiten mover bits a la izquierda o derecha"
+        },
+        {
+            "titulo": "Circuitos de Desplazamiento y Rotación   ",
+            "descripcion": "Son circuitos diseñados para mover los bits dentro de un registro hacia la izquierda o la derecha. También pueden rotar los bits, es decir, mover el bit que sale por un extremo hacia el otro extremo. Estas operaciones son fundamentales en tareas como multiplicación rápida, divisiones, criptografía, gráficos digitales y manipulación de datos a bajo nivel."
+        }
+        
+      ],
+      "powerpoint": {
+        "url": "https://docs.google.com/presentation/d/1j9XatAufSWrUFugG_bFE9WyTJuNXsjKX/edit?slide=id.p1#slide=id.p1",
+        "titulo": "Presentación: Unidad de Ejecución"
+      },
+      
+      "video": {
+        "id": "B7SpmkW0lTs",
+        "titulo": "Representación de Información Digital - Números enteros",
+        "descripcion": ""
+      }
+    }
+  ]
